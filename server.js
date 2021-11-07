@@ -7,6 +7,10 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
+// const nanoid = require("nanoid");
+// module.id = nanoid();
+// console.log()
+
 // middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
