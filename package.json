@@ -2,7 +2,7 @@
   "name": "note-taker",
   "version": "1.0.0",
   "description": "![Code badge](https://img.shields.io/github/languages/top/warrenp11/professional-readme-generator) \r ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
