@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-// middlewear
+// middleware
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
@@ -22,8 +22,7 @@ app.get("/notes", (req, res) => {
 
 // GET route for api
 app.get("/api/notes", (req, res) => {
-    let savedNotes = notes;
-  res.json(savedNotes);
+  res.json(notes);
 });
 
 // POST route for api
