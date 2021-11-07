@@ -30,16 +30,6 @@ function createNewNote(body, notesArray) {
     return note;
 }
 
-
-// GET routes for html pages
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/index.html"));
-});
-
-app.get("/notes", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/notes.html"));
-});
-
 // GET route for api
 app.get("/api/notes", (req, res) => {
   res.json(notes);
@@ -53,6 +43,15 @@ app.post("/api/notes", (req, res) => {
     const note = createNewNote(req.body, notes);
     res.json(note);
 });
+
+// GET routes for html pages
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "./public/index.html"));
+  });
+  
+  app.get("/notes", (req, res) => {
+    res.sendFile(path.join(__dirname, "./public/notes.html"));
+  });
 
 app.listen(PORT, () => {
   console.log(`API server now on port ${PORT}`);
