@@ -9,7 +9,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static("public"));
 
-const notes = require("./db/db.json");
+const { notes } = require("./db/db.json");
 
 // GET routes for html pages
 app.get("/", (req, res) => {
@@ -22,7 +22,8 @@ app.get("/notes", (req, res) => {
 
 // GET route for api
 app.get("/api/notes", (req, res) => {
-  res.json(notes);
+    let savedNotes = notes;
+  res.json(savedNotes);
 });
 
 // POST route for api
