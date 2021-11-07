@@ -1,5 +1,8 @@
-const express = require("express");
+const fs = require("fs");
 const path = require("path");
+
+const express = require("express");
+
 const PORT = process.env.PORT || 3001;
 
 const app = express();
@@ -10,6 +13,19 @@ app.use(express.json());
 app.use(express.static("public"));
 
 const { notes } = require("./db/db.json");
+
+// function to create new note
+function createNewNote(body, notesArray) {
+    const note = body;
+    notesArray.push(note);
+
+    fs.writeFileSync(
+        path.join(__dirname, "./db/db.json"),
+        JSON.stringify({ notes: notesArray }, null, 2)
+    );
+    return note;
+}
+
 
 // GET routes for html pages
 app.get("/", (req, res) => {
@@ -27,9 +43,9 @@ app.get("/api/notes", (req, res) => {
 
 // POST route for api
 app.post("/api/notes", (req, res) => {
-    res.json(req.body);
-    console.log(req.body);
     // create new note and send to `db.json`
+    const note = createNewNote(req.body, notes);
+    res.json(note);
 });
 
 app.listen(PORT, () => {
