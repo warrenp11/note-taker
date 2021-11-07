@@ -7,9 +7,9 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 
-// const nanoid = require("nanoid");
-// module.id = nanoid();
-// console.log()
+// import nanoid to produce unique id
+const {nanoid} = require("nanoid");
+// console.log(nanoid());
 
 // middleware
 app.use(express.urlencoded({ extended: true }));
@@ -47,6 +47,8 @@ app.get("/api/notes", (req, res) => {
 
 // POST route for api
 app.post("/api/notes", (req, res) => {
+    // give new note random id
+    req.body.id = nanoid();
     // create new note and send to `db.json`
     const note = createNewNote(req.body, notes);
     res.json(note);

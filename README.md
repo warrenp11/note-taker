@@ -60,7 +60,11 @@ Some starter code was provided for this assignment.
 ## Tests
 
 ## Credits
+[Node.js](https://nodejs.org/en/docs/)
+
 [Express.js](https://www.npmjs.com/package/express)
+
+[Nano ID](https://www.npmjs.com/package/nanoid)
 
 ## Project Insight
 
