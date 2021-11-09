@@ -1,0 +1,22 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "![Code badge](https://img.shields.io/github/languages/top/warrenp11/professional-readme-generator) \r ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warrenp11/note-taker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/warrenp11/note-taker/issues"
+  },
+  "homepage": "https://github.com/warrenp11/note-taker#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
