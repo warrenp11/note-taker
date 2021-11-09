@@ -32,6 +32,7 @@ function createNewNote(body, notesArray) {
 
 // GET route for api
 app.get("/api/notes", (req, res) => {
+  console.log(notes);
   res.json(notes);
 });
 
@@ -46,11 +47,11 @@ app.post("/api/notes", (req, res) => {
 
 // GET routes for html pages
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "./public/index.html"));
+    res.sendFile(path.join(__dirname, "/public/index.html"));
   });
   
   app.get("/notes", (req, res) => {
-    res.sendFile(path.join(__dirname, "./public/notes.html"));
+    res.sendFile(path.join(__dirname, "/public/notes.html"));
   });
 
 app.listen(PORT, () => {
