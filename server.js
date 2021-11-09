@@ -32,7 +32,7 @@ function createNewNote(body, notesArray) {
 
 // GET route for api
 app.get("/api/notes", (req, res) => {
-  console.log(notes);
+  // console.log(notes);
   res.json(notes);
 });
 

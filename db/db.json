@@ -22,6 +22,11 @@
       "title": "test",
       "text": "this post route is saving to the db.json file",
       "id": "onqhq7LXFH8UOSUMnexdY"
+    },
+    {
+      "title": "test",
+      "text": "testing app",
+      "id": "vt2a2z7a897WOYMTWHuLl"
     }
   ]
 }
