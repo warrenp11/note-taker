@@ -3,30 +3,6 @@
     {
       "title": "Test Title",
       "text": "Test text"
-    },
-    {
-      "title": "example1",
-      "text": "testing post route and add to json"
-    },
-    {
-      "tite": "braves win ship",
-      "text": "leggo!",
-      "id": "yiElv7Z8o7t6HK089GFN7"
-    },
-    {
-      "tite": "grace",
-      "text": "barks a lot",
-      "id": "euUCbMX4CRI3uwS_2_Q9w"
-    },
-    {
-      "title": "test",
-      "text": "this post route is saving to the db.json file",
-      "id": "onqhq7LXFH8UOSUMnexdY"
-    },
-    {
-      "title": "test",
-      "text": "testing app",
-      "id": "vt2a2z7a897WOYMTWHuLl"
     }
   ]
 }

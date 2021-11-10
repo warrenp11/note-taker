@@ -7,7 +7,6 @@
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Tests](#tests)
 * [Credits](#credits)
 * [Project Insight](#project-insight)
 * [Questions](#questions)
@@ -38,26 +37,9 @@ Some starter code was provided for this assignment.
         THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
 ## Installation
-1. Copy one of the clone links from the GitHub [repository](https://www.github.com/warrenp11/note-taker)
-* HTTPS `https://github.com/warrenp11/note-taker.git`
-* SSH  `git@github.com:warrenp11/note-taker.git` 
-
-2. In a new Bash or Terminal Window, navigate to the directory where the repository will be added
-
-3. Clone the repository with the following command:
-
-           git clone <username@host:/path/to/repository>
-
-4. Open repository in preferred code editor
-
-5. In the terminal, navigate to the root folder, and install the dependencies with the command:
-
-           npm i
-
+No installation required
 
 ## Usage
-
-## Tests
 
 ## Credits
 [Node.js](https://nodejs.org/en/docs/)
@@ -67,6 +49,9 @@ Some starter code was provided for this assignment.
 [Nano ID](https://www.npmjs.com/package/nanoid)
 
 ## Project Insight
+The project build flowed pretty well from the beginning, however I hit a major roadblock near the end of the build. As I pushed the app to Heroku I was noticing that none of the provided front-end JavaScript logic was functioning. It took me serveral days to finally figure out was happening (with the help of several of my just as confused instructors). There was an issue to how I was calling the notes.html page in my api call; due to this the JavaScript logic wasn't uploading. As mentioned I was able to finally correct the bug in my api call to have the application perform as expected.
+
+I still haven't added a delete route. I intend to do so in the near future time permitting.
 
 ## Questions
 If you have any questions about this project contact me directly at warrenp11@gmail.com
