@@ -38,12 +38,13 @@ Some starter code was provided for this assignment.
         THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 
 ## Deployed Application
-Deployed via [Heroku App](https://secret-mesa-01249.herokuapp.com/)
+[Click Here](https://secret-mesa-01249.herokuapp.com/) to launch the application via Heroku
 
 ## Installation
 No installation required
 
 ## Usage
+[Click Here](https://watch.screencastify.com/v/PSOpXBqXO6PDhHURD2lU) to see a video demonstation of the application in use
 
 ## Credits
 [Node.js](https://nodejs.org/en/docs/)
@@ -51,6 +52,8 @@ No installation required
 [Express.js](https://www.npmjs.com/package/express)
 
 [Nano ID](https://www.npmjs.com/package/nanoid)
+
+[Heroku](https://www.heroku.com)
 
 ## Project Insight
 The project build flowed pretty well from the beginning, however I hit a major roadblock near the end of the build. As I pushed the app to Heroku I was noticing that none of the provided front-end JavaScript logic was functioning. It took me serveral days to finally figure out was happening (with the help of several of my just as confused instructors). There was an issue to how I was calling the notes.html page in my api call; due to this the JavaScript logic wasn't uploading. As mentioned I was able to finally correct the bug in my api call to have the application perform as expected.
