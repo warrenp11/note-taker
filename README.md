@@ -1,10 +1,11 @@
 # Note Taker
 
-![Code badge](https://img.shields.io/github/languages/top/warrenp11/professional-readme-generator) 
+![Code badge](https://img.shields.io/github/languages/top/warrenp11/note-taker) 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Table of Contents
 * [Description](#description)
+* [Deployed Application](#deployed-application)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Credits](#credits)
@@ -35,6 +36,9 @@ Some starter code was provided for this assignment.
         THEN that note appears in the right-hand column
         WHEN I click on the Write icon in the navigation at the top of the page
         THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
+
+## Deployed Application
+Deployed via [Heroku App](https://secret-mesa-01249.herokuapp.com/)
 
 ## Installation
 No installation required
